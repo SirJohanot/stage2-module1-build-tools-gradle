@@ -4,6 +4,6 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-        return NumberUtils.createInteger(str) > NumberUtils.INTEGER_ZERO;
+        return NumberUtils.toDouble(str, -1) > NumberUtils.INTEGER_ZERO;
     }
 }
