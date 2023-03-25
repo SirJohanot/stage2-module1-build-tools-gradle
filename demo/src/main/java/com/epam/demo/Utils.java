@@ -8,6 +8,7 @@ public class Utils {
     public static boolean isAllPositiveNumbers(List<String> args) {
         return args.stream()
                 .map(StringUtils::isPositiveNumber)
-                .reduce((a, b) -> a && b);
+                .reduce((a, b) -> a && b)
+                .orElse(false);
     }
 }

@@ -6,11 +6,11 @@ group 'com.epam'
 version '1.0.0'
 
 repositories {
-    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
-    implementation files('../utils/build/libs/utils.jar')
+    implementation 'com.epam:utils:1.0.0'
 }
 
 test {
